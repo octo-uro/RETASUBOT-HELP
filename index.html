@@ -12,87 +12,108 @@
 
     <div class="main">
     　<ul>
-    　  <li>コマンド一覧
-
-help                        *ヘルプを表示します
-speed                       *速度を計測します
-
-[my]
-
-my:id                       *自分のmidを表示します
-my:url                      *自分の友達追加URLを発行します
-my:me                       *自分の連絡先を送信します
-my:name                     *自分のアカウント名を表示します
-my:status                   *自分のステータスを表示します
-my:name/"text"              *アカウント名を変更します
-my:status/                  *ステータスを変更します
-my:mm/                      *マクロ/Text送信したい数
-my:gift                     *ギフトをします
-my:add$ @                   *メンションした垢を友達追加します
-my:bye                      *グループから退出します
-
-[set]
-set:unsend/on or off        *取り消されたメッセージを自動復元します
-set:joins/number or off     *招待された時、グループの人数が何人以下の場合、招待拒否するか設定できます
-set:st/number or off        *スタンプをどれぐらい連続で送信すると蹴るか設定できます
-set:aj/on or off            *自動参加するか設定できます
-set:ar/on or off            *自動既読をするか設定できます
-set:ad/on or off            *自動追加をするか設定できます(?)
-set:aout/on or off          *自動強制退会をするか設定できます
-set:joinm/on or off         *参加メッセージをオンにするか設定できます
-set:outm/on or off          *退会メッセージをオンにするか接待できます
-set:allon                   *自動参加、自動追加、自動強制退会、ID検索をオンにします
-set:alloff                  *自動参加、自動追加、自動強制退会、ID検索をオフにします
-set:allmon                  *自動参加&自動追加&自動強制退会をした時のメッセージを自動設定します
-set:allmoff                 *自動参加&自動追加&自動強制退会をした時のメッセージを削除します
-set:ajm/"text"              *自動参加メッセージを変更します
-set:atm/"text"              *自動強制退会メッセージを変更します
-set:outm/"text"             *退会メッセージを変更します
-set:joinm/"text"            *参加メッセージを変更します
-set:adm/"text"              *自動追加メッセージを変更します
-set#                        *現在の設定状況を確認します
-
-[group]
-g:id                        *gitを表示します
-g:cancel                    *招待されてるユーザを全てキャンセルします
-g:info                      *グループ情報を表示します
-g:name/"text"               *グループ名を変更します
-g:url                       *招待URLを発行します
-g:open                      *招待URLによる参加を許可します
-g:close                     *招待URLによる参加を拒否します
-
-[kick]
-mk$                         *メンションキックを行います
-nk/"text"                   *ネームキックを行います
-k:mk$ @                     *キッカーでメンションキックを行います
-
-[機能]
-f:google/"text"             *Googleで検索します
-f:yahoo/"text"              *Yahoo!で検索します
-f:youtube/"text"            *YouTubeで検索します
-f:mid$ @                    *メンションしたユーザのmidを表示します
-f:contact$ @                *メンションしたユーザの連絡先を送信します
-f:polise$ @                 *メンションしたユーザを通報します
-f:midinv/"text"             *midで招待します
-f:midcontact/"text"         *midで連絡先を送信します
-
-[キッカー]
-k:mk$ @                     *キッカーでメンションキックします
-k:join                      *キッカーをURL招待します
-k:join2                     *キッカーを招待します
-k:call/"text"               *キッカーに好きな言葉を点呼させます
-k:test                      *キッカーの動作テストをします
-k:bye                       *キッカーを退会させます
-k:login                     *ログアウトしたキッカーを再ログインさせます
-k:url/"number"              *キッカーにするためのURLを発行します
-
-[ブラックリスト]
-badd                        *ブラリス登録
-bdel                        *ブラリス解除
-blist/                      *ブラリス表示
-
-[終了]
-bot:end                     *半BOTを終了します
+    　  <li>コマンド一覧<br>
+<br>
+help                            *ヘルプを表示します<br>
+speed                           *速度を計測します<br>
+<br>
+[my]<br>
+<br>
+my:id                           *自分のmidを表示します<br>
+my:url                          *自分の友達追加URLを発行します<br>
+my:me                           *自分の連絡先を送信します<br>
+my:name                         *自分のアカウント名を表示します<br>
+my:status                       *自分のステータスを表示します<br>
+my:name/&quot;text&quot;                  *アカウント名を変更します<br>
+my:status/                      *ステータスを変更します<br>
+my:mm/                          *マクロ/Text送信したい数<br>
+my:gift                         *ギフトをします<br>
+my:add$ @                       *メンションした垢を友達追加します<br>
+my:bye                          *グループから退出します<br>
+<br>
+[set]<br>
+set:unsend/on or off            *取り消されたメッセージを自動復元します<br>
+set:joins/number or off         *招待されたグループの人数が何人以下の場合、招待拒否するか設定できます<br>
+set:st/number or off            *スタンプをどれぐらい連続で送信すると蹴るか設定できます<br>
+set:aj/on or off                *自動参加するか設定できます<br>
+set:ar/on or off                *自動既読をするか設定できます<br>
+set:ad/on or off                *自動追加をするか設定できます(?)<br>
+set:aout/on or off              *自動強制退会をするか設定できます<br>
+set:joinm/on or off             *参加メッセージをオンにするか設定できます<br>
+set:outm/on or off              *退会メッセージをオンにするか接待できます<br>
+set:allon                       *自動参加、自動追加、自動強制退会、ID検索をオンにします<br>
+set:alloff                      *自動参加、自動追加、自動強制退会、ID検索をオフにします<br>
+set:allmon                      *自動参加&amp;自動追加&amp;自動強制退会をした時のメッセージを自動設定します<br>
+set:allmoff                     *自動参加&amp;自動追加&amp;自動強制退会をした時のメッセージを削除します<br>
+set:ajm/&quot;text&quot;                  *自動参加メッセージを変更します<br>
+set:atm/&quot;text&quot;                  *自動強制退会メッセージを変更します<br>
+set:outm/&quot;text&quot;                 *退会メッセージを変更します<br>
+set:joinm/&quot;text&quot;                *参加メッセージを変更します<br>
+set:adm/&quot;text&quot;                  *自動追加メッセージを変更します<br>
+set:save                        *現在の設定を保存します<br>
+set#                            *現在の設定状況を確認します<br>
+<br>
+[group]<br>
+g:id                            *gitを表示します<br>
+g:cancel                        *招待されてるユーザを全てキャンセルします<br>
+g:info                          *グループ情報を表示します<br>
+g:name/&quot;text&quot;                   *グループ名を変更します<br>
+g:url                           *招待URLを発行します<br>
+g:open                          *招待URLによる参加を許可します<br>
+g:close                         *招待URLによる参加を拒否します<br>
+<br>
+[kick]<br>
+mk$                             *メンションキックを行います<br>
+nk/&quot;text&quot;                       *ネームキックを行います<br>
+k:mk$ @                         *キッカーでメンションキックを行います<br>
+k:nk$ @                         *キッカーでネームキックします<br>
+<br>
+[機能]<br>
+f:google/&quot;text&quot;                 *Googleで検索します<br>
+f:yahoo/&quot;text&quot;                  *Yahoo!で検索します<br>
+f:youtube/&quot;text&quot;                *YouTubeで検索します<br>
+f:mid$ @                        *メンションしたユーザのmidを表示します<br>
+f:contact$ @                    *メンションしたユーザの連絡先を送信します<br>
+f:polise$ @                     *メンションしたユーザを通報します<br>
+f:midinv/&quot;text&quot;                 *midで招待します<br>
+f:midcontact/&quot;text&quot;             *midで連絡先を送信します<br>
+<br>
+[キッカー]<br>
+k:mk$ @                         *キッカーでメンションキックします<br>
+k:nk$ @                         *キッカーでネームキックします<br>
+k:join                          *キッカーをURL招待します<br>
+k:join2                         *キッカーを招待します<br>
+k:call/&quot;text&quot;                   *キッカーに好きな言葉を点呼させます<br>
+k:test                          *キッカーの動作テストをします<br>
+k:bye                           *キッカーを退会させます<br>
+k:login                         *ログアウトしたキッカーを再ログインさせます<br>
+k:url/&quot;number&quot;                  *キッカーにするためのURLを発行します<br>
+<br>
+[protect]<br>
+p:kick/on or off                *蹴り保護の機能です<br>
+p:url/on or off                 *URL保護の機能です<br>
+p:inv/on or off                 *招待保護の機能です<br>
+p:name/on or off                *名前保護の機能です<br>
+<br>
+[ブラックリスト]<br>
+badd                            *連絡先でブラックリストに追加します<br>
+bdel                            *連絡先でブラックリストから削除します<br>
+blist/                          *名前でブラックリストの人を表示します<br>
+blist#                          *連絡先でブラックリストの人を表示します<br>
+<br>
+[ホワイトリスト]<br>
+wadd                            *連絡先でホワイトリストに追加します<br>
+wdel                            *連絡先でホワイトリストから削除します<br>
+wlist/                          *名前でホワイトリストの人を表示します<br>
+wlist#                          *連絡先でホワイトリストの人を表示します<br>
+<br>
+[メアドログイン]<br>
+my:mail/&quot;email&quot;:&quot;pass&quot;          *メアドで半bot登録します<br>
+k:mail/&quot;email&quot;:&quot;pass&quot;:&quot;number&quot;  *キッカーをメアドで登録します<br>
+<br>
+[終了]<br>
+bot:end                         *半BOTを終了します<br>
+bot:restart                     *半BOTを再起動します(要メアド登録)
        <li>
     　</ul>    
     </div>
