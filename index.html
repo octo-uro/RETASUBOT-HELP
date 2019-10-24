@@ -6,120 +6,401 @@
     <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
-    <div class="header">
+
+
+    <div class="o:help"> 
+      <p class="command-list">コマンド一覧<br><br></p>
+      <table>
+        <tr>
+          <th>help</th>
+          <td>ヘルプを表示します</td>
+        </tr>
+        <tr>
+          <th>speed</th>
+          <td>速度を計測します</td>
+        </tr>
+      </table>
+    </div>
+    
+    
+    <div class="my:help">
+      <p class="command-list"><br>[my]</p>
+      <table>
+        <th>my:id</th>
+        <td>自分のmidを表示します</td>
+      </table>
+      <table>
+        <th>my:url</th>
+        <td>自分の友達追加URLを発行します</td>
+      </table>
+      <table>
+        <th>my:me</th>
+        <td>自分の連絡先を送信します</td>
+      </table>
+      <table>
+        <th>my:name</th>
+        <td>自分のアカウント名を表示します</td>
+      </table>
+      <table>
+        <th>my:status</th>
+        <td>自分のステータスを表示します</td>
+      </table>
+      <table>
+        <th>my:name/"text"</th>
+        <td>アカウント名を変更します</td>
+      </table>
+      <table>
+        <th>my:status/"text"</th>
+        <td>ステータスを変更します</td>
+      </table>
+      <table>
+        <th>my:mm/"text"</th>
+        <td>マクロ/Text送信したい数</td>
+      </table>
+      <table>
+        <th>my:gift</th>
+        <td>ギフトをします</td>
+      </table>
+      <table>
+        <th>my:add$ @</th>
+        <td>メンションした垢を友達追加します</td>
+      </table>
+      <table>
+        <th>my:bye</th>
+        <td>グループから退出します</td>
+      </table>
+    </div>
+    
+    
+    <div class="set:help">
+      <p class="command-list"><br>[set]</p>
       
+      <table>
+        <th>set:unsend/on or off</th>
+        <td>取り消されたメッセージを自動復元します</td>
+      </table>
+      <table>
+        <th>set:joins/number or off</th>
+        <td>招待されたグループの人数が何人以下の場合、招待拒否するか設定できます</td>
+      </table>
+      <table>
+        <th>set:st/number or off</th>
+        <td>スタンプをどれぐらい連続で送信すると蹴るか設定できます</td>
+      </table>
+      <table>
+        <th>set:aj/on or off</th>
+        <td>自動参加するか設定できます</td>
+      </table>
+      <table>
+        <th>set:ar/on or off</th>
+        <td>自動既読をするか設定できます</td>
+      </table>
+      <table>
+        <th>set:ad/on or off</th>
+        <td>自動追加をするか設定できます</td>
+      </table>
+      <table>
+        <th>set:aout/on or off</th>
+        <td>自動強制退会をするか設定できます</td>
+      </table>
+      <table>
+        <th>set:joinm/on or off</th>
+        <td>参加メッセージをオンにするか設定できます</td>
+      </table>
+      <table>
+        <th>set:outm/on or off</th>
+        <td>退会メッセージをオンにするか設定できます</td>
+      </table>
+      <table>
+        <th>set:allon</th>
+        <td>自動参加、自動追加、自動強制退会、ID検索をオンにします</td>
+      </table>
+      <table>
+        <th>set:alloff</th>
+        <td>自動参加、自動追加、自動強制退会、ID検索をオフにします</td>
+      </table>
+      <table>
+        <th>set:allmon</th>
+        <td>自動参加&自動追加&自動強制退会をした時のメッセージを自動設定します</td>
+      </table>
+      <table>
+        <th>set:allmoff</th>
+        <td>自動参加&自動追加&自動強制退会をした時のメッセージを削除します</td>
+      </table>
+      <table>
+        <th>set:ajm/"text"</th>
+        <td>自動参加メッセージを変更します</td>
+      </table>
+      <table>
+        <th>set:atm/"text"</th>
+        <td>自動強制退会メッセージを変更します</td>
+      </table>
+      <table>
+        <th>set:outm/"text"</th>
+        <td>退会メッセージを変更します</td>
+      </table>
+      <table>
+        <th>set:joinm/"text"</th>
+        <td>参加メッセージを変更します</td>
+      </table>
+      <table>
+        <th>set:adm/"text"</th>
+        <td>自動追加メッセージを変更します</td>
+      </table>
+      <table>
+        <th>set:save</th>
+        <td>現在の設定を保存します</td>
+      </table>
+      <table>
+        <th>set#</th>
+        <td>現在の設定状況を確認します</td>
+      </table>
+    </div>
+    
+    
+    <div class="g:help">
+      <p class="command-list"><br>[group]</p>
+      
+      <table>
+        <th>g:id</th>
+        <td>gitを表示します</td>
+      </table>
+      <table>
+        <th>g:cancel</th>
+        <td>招待されてるユーザを全てキャンセルします</td>
+      </table>
+      <table>
+        <th>g:info</th>
+        <td>グループ情報を表示します</td>
+      </table>
+      <table>
+        <th>g:name/"text"</th>
+        <td>グループ名を変更します</td>
+      </table>
+      <table>
+        <th>g:url</th>
+        <td>招待URLを発行します</td>
+      </table>
+      <table>
+        <th>g:open</th>
+        <td>招待URLによる参加を許可します</td>
+      </table>
+      <table>
+        <th>g:close</th>
+        <td>招待URLによる参加を拒否します</td>
+      </table>
+    </div>
+    
+    <div class=o:help>
+      <p class=command-list><br>[kick]</p>
+      
+      <table>
+        <th>mk$ @</th>
+        <td>メンションキックを行います</td>
+      </table>
+      <table>
+        <th>nk/"text"</th>
+        <td>ネームキックを行います</td>
+      </table>
+      <table>
+        <th>all:nk/</th>
+        <td>キッカーで全蹴りを行います</td>
+      </table>
+      <table>
+        <th>k:mk$ @</th>
+        <td>キッカーでメンションキックを行います</td>
+      </table>
+      <table>
+        <th>k:nk/"text"</th>
+        <td>キッカーでネームキックを行います</td>
+      </table>
+    </div>
+    
+    <div class=f:help>
+      <p class=command-list><br>[機能]<p>
+     <table>
+        <th>f:google/"text"</th>
+        <td>Googleで検索します</td>
+      </table> 
+      <table>
+        <th>f:yahoo/"text"</th>
+        <td>Yahooで検索します</td>
+      </table>
+      <table>
+        <th>f:youtube/"name"</th>
+        <td>YouTubeで検索します</td>
+      </table>
+      <table>
+        <th>f:mid$ @</th>
+        <td>メンションしたユーザのmidを表示します</td>
+      </table>
+      <table>
+        <th>f:contact$ @</th>
+        <td>メンションしたユーザの連絡先を送信します</td>
+      </table>
+      <table>
+        <th>f:polise$ @</th>
+        <td>メンションしたユーザを通報します</td>
+      </table>
+      <table>
+        <th>f:midinv/"text"</th>
+        <td>midで招待します</td>
+      </table>
+      <table>
+        <th>f:midcontact/"text"</th>
+        <td>midで連絡先を送信します</td>
+      </table>
+    </div>
+    
+    <div class=k:help>
+      <p class=command-list><br>[キッカー]</p>
+      
+      <table>
+        <th>k:mk$ @</th>
+        <td>キッカーでメンションキックします</td>
+      </table>
+      <table>
+        <th>k:nk/"text"</th>
+        <td>キッカーでネームキックします</td>
+      </table>
+      <table>
+        <th>k:join</th>
+        <td>キッカーをURL招待します</td>
+      </table>
+      <table>
+        <th>k:join2</th>
+        <td>キッカーを招待します</td>
+      </table>
+      <table>
+        <th>k:call/"text"</th>
+        <td>キッカーに好きな言葉を点呼させます</td>
+      </table>
+      <table>
+        <th>k:test</th>
+        <td>キッカーの動作テストをします</td>
+      </table>
+      <table>
+        <th>k:bye</th>
+        <td>キッカーを退会させます</td>
+      </table>
+      <table>
+        <th>k:login</th>
+        <td>ログアウトしたキッカーを再ログインさせます</td>
+      </table>
+      <table>
+        <th>k:url/"number"</th>
+        <td>キッカーにするためのURLを発行します</td>
+      </table>
+      <table>
+        <th>k:mail/"email":"pass":"number"</th>
+        <td>キッカーをメールアドレスで登録します</td>
+      </table>
+    </div>
+    
+    <div class=p:help>
+      <p class=command-list><br>[保護]</p>
+      
+      <table>
+        <th>p:kick/on or off</th>
+        <td>蹴り保護の機能です</td>
+      </table>
+      <table>
+        <th>p:url/on or off</th>
+        <td>URL保護の機能です</td>
+      </table>
+      <table>
+        <th>p:inv/on or off</th>
+        <td>招待保護の機能です</td>
+      </table>
+      <table>
+        <th>p:name/on or off</th>
+        <td>名前保護の機能です</td>
+      </table>
+    </div>
+    
+    <div class=b:help>
+      <p class=command-list><br>[ブラックリスト]</p>
+      
+      <table>
+        <th>badd</th>
+        <td>連絡先でブラックリストに追加します</td>
+      </table>
+      <table>
+        <th>bdel</th>
+        <td>連絡先でブラックリストから削除します</td>
+      </table>
+      <table>
+        <th>ba$ @</th>
+        <td>メンションでブラックリストに追加します</td>
+      </table>
+      <table>
+        <th>bd$ @</th>
+        <td>メンションでブラックリストから削除します</td>
+      </table>
+      <table>
+        <th>blist/</th>
+        <td>名前でブラックリストの人を表示します</td>
+      </table>
+      <table>
+        <th>blist#</th>
+        <td>連絡先でブラックリストの人を表示します</td>
+      </table>
+    </div>
+    
+    <div class=w:help>
+      <p class=command-list><br>[ホワイトリスト]</p>
+      
+      <table>
+        <th>wadd</th>
+        <td>連絡先でホワイトリストに追加します</td>
+      </table>
+      <table>
+        <th>wdel</th>
+        <td>連絡先でホワイトリストから削除します</td>
+      </table>
+      <table>
+        <th>wa$ @</th>
+        <td>メンションでホワイトリストに追加します</td>
+      </table>
+      <table>
+        <th>wd$ @</th>
+        <td>メンションでホワイトリストから削除します</td>
+      </table>
+      <table>
+        <th>wlist/</th>
+        <td>名前でホワイトリストの人を表示します</td>
+      </table>
+      <table>
+        <th>wlist#</th>
+        <td>連絡先でホワイトリストの人を表示します</td>
+      </table>
+    </div>
+    
+    <div class=o:help>
+      <p class=command-list><br>[メアド登録]</p>
+      
+      <table>
+        <th>my:mail/"email":"pass"</th>
+        <td>メアドで半bot登録します</td>
+      </table>
+      <table>
+        <th>k:mail/"email":"pass":"number"</th>
+        <td>キッカーをメアドで登録します</td>
+      </table>
+    </div>
+    
+    <div class=o:help>
+      <p class=command-list><br>[終了]</p>
+      
+      <table>
+        <th>bot:end</th>
+        <td>半BOTを終了します</td>
+      </table>
+      <table>
+        <th>bot:restart</th>
+        <td>半BOTを再起動します(要メアド登録)</td>
+      </table>
     </div>
 
-    <div class="main">    　  
-     <p>コマンド一覧<br>
-<br>
-help                            *ヘルプを表示します<br>
-speed                           *速度を計測します<br>
-<br>
-[my]<br>
-<br>
-my:id                           *自分のmidを表示します<br>
-my:url                          *自分の友達追加URLを発行します<br>
-my:me                           *自分の連絡先を送信します<br>
-my:name                         *自分のアカウント名を表示します<br>
-my:status                       *自分のステータスを表示します<br>
-my:name/&quot;text&quot;                  *アカウント名を変更します<br>
-my:status/                      *ステータスを変更します<br>
-my:mm/                          *マクロ/Text送信したい数<br>
-my:gift                         *ギフトをします<br>
-my:add$ @                       *メンションした垢を友達追加します<br>
-my:bye                          *グループから退出します<br>
-<br>
-[set]<br>
-set:unsend/on or off            *取り消されたメッセージを自動復元します<br>
-set:joins/number or off         *招待されたグループの人数が何人以下の場合、招待拒否するか設定できます<br>
-set:st/number or off            *スタンプをどれぐらい連続で送信すると蹴るか設定できます<br>
-set:aj/on or off                *自動参加するか設定できます<br>
-set:ar/on or off                *自動既読をするか設定できます<br>
-set:ad/on or off                *自動追加をするか設定できます<br>
-set:aout/on or off              *自動強制退会をするか設定できます<br>
-set:joinm/on or off             *参加メッセージをオンにするか設定できます<br>
-set:outm/on or off              *退会メッセージをオンにするか接待できます<br>
-set:allon                       *自動参加、自動追加、自動強制退会、ID検索をオンにします<br>
-set:alloff                      *自動参加、自動追加、自動強制退会、ID検索をオフにします<br>
-set:allmon                      *自動参加&amp;自動追加&amp;自動強制退会をした時のメッセージを自動設定します<br>
-set:allmoff                     *自動参加&amp;自動追加&amp;自動強制退会をした時のメッセージを削除します<br>
-set:ajm/&quot;text&quot;                  *自動参加メッセージを変更します<br>
-set:atm/&quot;text&quot;                  *自動強制退会メッセージを変更します<br>
-set:outm/&quot;text&quot;                 *退会メッセージを変更します<br>
-set:joinm/&quot;text&quot;                *参加メッセージを変更します<br>
-set:adm/&quot;text&quot;                  *自動追加メッセージを変更します<br>
-set:save                        *現在の設定を保存します<br>
-set#                            *現在の設定状況を確認します<br>
-<br>
-[group]<br>
-g:id                            *gitを表示します<br>
-g:cancel                        *招待されてるユーザを全てキャンセルします<br>
-g:info                          *グループ情報を表示します<br>
-g:name/&quot;text&quot;                   *グループ名を変更します<br>
-g:url                           *招待URLを発行します<br>
-g:open                          *招待URLによる参加を許可します<br>
-g:close                         *招待URLによる参加を拒否します<br>
-<br>
-[kick]<br>
-mk$                             *メンションキックを行います<br>
-nk/&quot;text&quot;                       *ネームキックを行います<br>
-k:mk$ @                         *キッカーでメンションキックを行います<br>
-k:nk$ @                         *キッカーでネームキックします<br>
-<br>
-[機能]<br>
-f:google/&quot;text&quot;                 *Googleで検索します<br>
-f:yahoo/&quot;text&quot;                  *Yahoo!で検索します<br>
-f:youtube/&quot;text&quot;                *YouTubeで検索します<br>
-f:mid$ @                        *メンションしたユーザのmidを表示します<br>
-f:contact$ @                    *メンションしたユーザの連絡先を送信します<br>
-f:polise$ @                     *メンションしたユーザを通報します<br>
-f:midinv/&quot;text&quot;                 *midで招待します<br>
-f:midcontact/&quot;text&quot;             *midで連絡先を送信します<br>
-<br>
-[キッカー]<br>
-k:mk$ @                         *キッカーでメンションキックします<br>
-k:nk$ @                         *キッカーでネームキックします<br>
-k:join                          *キッカーをURL招待します<br>
-k:join2                         *キッカーを招待します<br>
-k:call/&quot;text&quot;                   *キッカーに好きな言葉を点呼させます<br>
-k:test                          *キッカーの動作テストをします<br>
-k:bye                           *キッカーを退会させます<br>
-k:login                         *ログアウトしたキッカーを再ログインさせます<br>
-k:url/&quot;number&quot;                  *キッカーにするためのURLを発行します<br>
-<br>
-[protect]<br>
-p:kick/on or off                *蹴り保護の機能です<br>
-p:url/on or off                 *URL保護の機能です<br>
-p:inv/on or off                 *招待保護の機能です<br>
-p:name/on or off                *名前保護の機能です<br>
-<br>
-[ブラックリスト]<br>
-badd                            *連絡先でブラックリストに追加します<br>
-bdel                            *連絡先でブラックリストから削除します<br>
-blist/                          *名前でブラックリストの人を表示します<br>
-blist#                          *連絡先でブラックリストの人を表示します<br>
-<br>
-[ホワイトリスト]<br>
-wadd                            *連絡先でホワイトリストに追加します<br>
-wdel                            *連絡先でホワイトリストから削除します<br>
-wa$ @                           *メンションでホワイトリストに追加します<br>
-wd$ @                           *メンションでホワイトリストから削除します<br>
-wlist/                          *名前でホワイトリストの人を表示します<br>
-wlist#                          *連絡先でホワイトリストの人を表示します<br>
-<br>
-[メアドログイン]<br>
-my:mail/&quot;email&quot;:&quot;pass&quot;          *メアドで半bot登録します<br>
-k:mail/&quot;email&quot;:&quot;pass&quot;:&quot;number&quot;  *キッカーをメアドで登録します<br>
-<br>
-[終了]<br>
-bot:end                         *半BOTを終了します<br>
-bot:restart                     *半BOTを再起動します(要メアド登録)
-      </p>    
-    </div>
-
-    <div class="footer">
-      
-    </div>
   </body>
 </html>
