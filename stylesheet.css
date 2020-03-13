@@ -40,7 +40,7 @@ body{
   font-weight: bold;
   padding: 0.25em 0;
   text-decoration: none;
-  color: #67c5ff;  
+  color: #008000;  
 }
 
 .btn-border-bottom:before {
@@ -51,7 +51,7 @@ body{
   top:100%;
   left: 0;
   border-radius: 3px;
-  background:#67c5ff;
+  background:#008000;
   transition: .2s;
 }
 
